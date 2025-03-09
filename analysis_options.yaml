@@ -1,0 +1,21 @@
+# This file configures the analyzer, which statically analyzes Dart code
+# to check for errors, warnings, and lints.
+
+# The issues identified by the analyzer are surfaced in the UI of Dart-enabled
+# IDEs (https://dart.dev/tools#ides-and-editors). The analyzer can also be
+# invoked from the command line by running `flutter analyze`.
+
+# The following line activates a set of recommended lints for Flutter apps,
+# packages, and plugins designed to encourage good coding practices.
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    avoid_print: true  # يمنع استخدام print في الكود، ويفضل استخدام debugPrint
+    prefer_single_quotes: true  # يفضل استخدام الفواصل الفردية ''
+    always_use_package_imports: true  # يجبرك على استخدام الاستيراد عبر الحزم بدلاً من المسارات النسبية
+    prefer_const_constructors: true  # يشجع على استخدام const عند الإمكان
+    prefer_final_fields: true  # يجبرك على استخدام final للمتغيرات غير القابلة للتغيير
+    sort_constructors_first: true  # يفرض ترتيب المُنشئات في بداية الكلاس
+    unnecessary_null_checks: true  # يمنع الفحوصات غير الضرورية لـ null
+    use_super_parameters: true  # يجبرك على استخدام super للتمريرات في الـ constructor
