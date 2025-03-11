@@ -1,3 +1,2 @@
-class Assets {
-  static const logo = 'assets/images/Logo.png';
-}
+const kLogo = 'assets/images/Logo.png';
+const kTestImage = 'assets/images/test_image.png';
