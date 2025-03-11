@@ -6,14 +6,11 @@ class ListViewItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: MediaQuery.of(context).size.height * .3,
-      child: AspectRatio(
-        aspectRatio: 2.5 / 4,
-        child: Container(
-          decoration: const BoxDecoration(
-              image: DecorationImage(image: AssetImage(kTestImage))),
-        ),
+    return AspectRatio(
+      aspectRatio: 2.5 / 4,
+      child: Container(
+        decoration: const BoxDecoration(
+            image: DecorationImage(image: AssetImage(kTestImage))),
       ),
     );
   }
