@@ -1,4 +1,5 @@
 import 'package:bookly_app/features/home/presentation/widgets/custom_app_bar.dart';
+import 'package:bookly_app/features/home/presentation/widgets/list_view_item.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -9,7 +10,7 @@ class HomeView extends StatelessWidget {
     return const SafeArea(
       child: Scaffold(
         body: Column(
-          children: [CustomAppBar()],
+          children: [CustomAppBar(), ListViewItem()],
         ),
       ),
     );
