@@ -1,23 +1,18 @@
 name: bookly_app
 description: "A new Flutter project."
 
-# يمنع نشر المشروع إلى pub.dev
 publish_to: 'none' 
 
-# رقم إصدار التطبيق
 version: 1.0.0+1
-f
-# ضبط بيئة العمل ومتطلبات إصدار Dart
+
 environment:
   sdk: ">=3.3.0 <4.0.0"
 
-# إضافة الحزم المطلوبة للمشروع
 dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.8
   font_awesome_flutter: ^10.8.0
-
 
 dev_dependencies:
   flutter_lints: ^5.0.0
@@ -35,10 +30,11 @@ flutter:
       fonts:
         - asset: assets/fonts/Montserrat-Regular.ttf
         - asset: assets/fonts/Montserrat-Bold.ttf
-          weight: 700
+          
         - asset: assets/fonts/Montserrat-SemiBold.ttf
-          weight: 600
+         
 
     - family: Spectral
       fonts:
         - asset: assets/fonts/Spectral-Regular.ttf
+          weight: 400

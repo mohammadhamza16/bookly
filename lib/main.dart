@@ -3,7 +3,6 @@ import 'package:bookly_app/core/router/app_routes.dart';
 import 'package:bookly_app/core/router/router.dart';
 import 'package:bookly_app/features/splash/presentation/splash_view.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const Bookly());
