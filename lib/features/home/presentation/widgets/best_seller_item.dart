@@ -10,6 +10,7 @@ class BestSellerItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: MediaQuery.of(context).size.width,
       height: 150,
       child: const Row(
         children: [
@@ -17,7 +18,7 @@ class BestSellerItem extends StatelessWidget {
           SizedBox(
             width: 12,
           ),
-          BestSellerDetails()
+          BestSellerDetails(),
         ],
       ),
     );
