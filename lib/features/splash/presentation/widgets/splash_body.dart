@@ -1,7 +1,7 @@
+import 'package:bookly_app/core/router/app_routes.dart';
 import 'package:bookly_app/core/utils/assets.dart';
-import 'package:bookly_app/features/home/presentation/home_view.dart';
+
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class SplashBody extends StatefulWidget {
   const SplashBody({super.key});
@@ -37,6 +37,6 @@ class _SplashBodyState extends State<SplashBody> {
         const Duration(
           seconds: 2,
         ),
-        () => Get.to(const HomeView(), transition: Transition.fadeIn));
+        () => Navigator.pushNamed(context, AppRoutes.homeRoute));
   }
 }
