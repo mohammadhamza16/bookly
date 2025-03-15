@@ -32,7 +32,7 @@ class HomeView extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 30.0),
                 child: Text(
                   'Best Seller',
-                  style: Styles.textStyle18,
+                  style: Styles.textStyle18.copyWith(color: Colors.white),
                 ),
               ),
             ),

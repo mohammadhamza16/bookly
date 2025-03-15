@@ -37,6 +37,6 @@ class _SplashBodyState extends State<SplashBody> {
         const Duration(
           seconds: 2,
         ),
-        () => Navigator.pushNamed(context, AppRoutes.homeRoute));
+        () => Navigator.pushReplacementNamed(context, AppRoutes.homeRoute));
   }
 }
