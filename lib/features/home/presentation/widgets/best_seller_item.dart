@@ -11,7 +11,7 @@ class BestSellerItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, AppRoutes.bookdetails);
+        Navigator.pushNamed(context, AppRoutes.bookdetailsRoute);
       },
       child: Container(
         width: MediaQuery.of(context).size.width,
