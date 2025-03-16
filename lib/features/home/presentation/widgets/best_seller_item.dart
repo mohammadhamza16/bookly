@@ -1,3 +1,4 @@
+import 'package:bookly_app/core/router/app_routes.dart';
 import 'package:bookly_app/core/utils/assets.dart';
 import 'package:bookly_app/core/utils/styles.dart';
 import 'package:bookly_app/features/home/presentation/widgets/best_seller_details.dart';
@@ -9,17 +10,22 @@ class BestSellerItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: MediaQuery.of(context).size.width,
-      height: 150,
-      child: const Row(
-        children: [
-          BestSellerImage(),
-          SizedBox(
-            width: 12,
-          ),
-          BestSellerDetails(),
-        ],
+    return GestureDetector(
+      onTap: () {
+        Navigator.pushNamed(context, AppRoutes.bookdetails);
+      },
+      child: Container(
+        width: MediaQuery.of(context).size.width,
+        height: 150,
+        child: const Row(
+          children: [
+            BestSellerImage(),
+            SizedBox(
+              width: 12,
+            ),
+            BestSellerDetails(),
+          ],
+        ),
       ),
     );
   }

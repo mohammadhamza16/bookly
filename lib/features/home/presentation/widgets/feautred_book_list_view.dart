@@ -1,4 +1,4 @@
-import 'package:bookly_app/features/home/presentation/widgets/list_view_item.dart';
+import 'package:bookly_app/features/home/presentation/widgets/item_image.dart';
 import 'package:flutter/material.dart';
 
 class FeautredBookListView extends StatelessWidget {
@@ -12,7 +12,7 @@ class FeautredBookListView extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 14),
           itemCount: 10,
           scrollDirection: Axis.horizontal,
-          itemBuilder: (context, index) => const ListViewItem(),
+          itemBuilder: (context, index) => const ItemImage(),
         ));
   }
 }
