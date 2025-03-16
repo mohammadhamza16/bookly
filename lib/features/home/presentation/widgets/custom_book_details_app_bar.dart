@@ -7,7 +7,7 @@ class CustomBookDetailsAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 16),
+      padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 16),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -21,7 +21,7 @@ class CustomBookDetailsAppBar extends StatelessWidget {
               onPressed: () {},
               icon: const Icon(
                 FontAwesomeIcons.cartShopping,
-                size: 30,
+                size: 24,
               ))
         ],
       ),

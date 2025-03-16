@@ -21,8 +21,10 @@ class HomeView extends StatelessWidget {
                 height: 20,
               ),
             ),
-            const SliverToBoxAdapter(
-              child: FeautredBookListView(),
+            SliverToBoxAdapter(
+              child: FeautredBookListView(
+                height: MediaQuery.of(context).size.height * .3,
+              ),
             ),
             const SliverToBoxAdapter(
               child: SizedBox(height: 40),

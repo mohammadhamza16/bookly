@@ -29,7 +29,8 @@ class BestSellerRating extends StatelessWidget {
             '(2390)',
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: Styles.textStyle16,
+            style: Styles.textStyle16
+                .copyWith(color: Colors.white.withValues(alpha: .6)),
           ),
         ],
       ),
