@@ -1,4 +1,4 @@
-import 'package:bookly_app/features/home/presentation/widgets/item_image.dart';
+import 'package:bookly_app/features/home/presentation/widgets/book_details_view_body.dart';
 import 'package:flutter/material.dart';
 
 class BookDetailsView extends StatelessWidget {
@@ -6,8 +6,8 @@ class BookDetailsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [ItemImage()],
+    return const SafeArea(
+      child: Scaffold(body: BookDetailsViewBody()),
     );
   }
 }

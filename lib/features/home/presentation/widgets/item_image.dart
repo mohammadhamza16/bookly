@@ -10,7 +10,8 @@ class ItemImage extends StatelessWidget {
       aspectRatio: 2.7 / 4,
       child: Container(
         decoration: const BoxDecoration(
-            image: DecorationImage(image: AssetImage(kTestImage))),
+            image: DecorationImage(
+                fit: BoxFit.fill, image: AssetImage(kTestImage))),
       ),
     );
   }
