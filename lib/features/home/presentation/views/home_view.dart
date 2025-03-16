@@ -8,43 +8,41 @@ class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        body: CustomScrollView(
-          slivers: [
-            const SliverToBoxAdapter(
-              child: CustomAppBar(),
-            ),
-            const SliverToBoxAdapter(
-              child: SizedBox(
-                height: 20,
+  Widget build(BuildContext context) => SafeArea(
+        child: Scaffold(
+          body: CustomScrollView(
+            slivers: [
+              const SliverToBoxAdapter(
+                child: CustomAppBar(),
               ),
-            ),
-            SliverToBoxAdapter(
-              child: FeautredBookListView(
-                height: MediaQuery.of(context).size.height * .3,
-              ),
-            ),
-            const SliverToBoxAdapter(
-              child: SizedBox(height: 40),
-            ),
-            SliverToBoxAdapter(
-              child: Padding(
-                padding: const EdgeInsets.only(left: 30.0),
-                child: Text(
-                  'Best Seller',
-                  style: Styles.textStyle18.copyWith(color: Colors.white),
+              const SliverToBoxAdapter(
+                child: SizedBox(
+                  height: 20,
                 ),
               ),
-            ),
-            const SliverToBoxAdapter(
-              child: SizedBox(height: 20),
-            ),
-            const BestSellerListView(),
-          ],
+              SliverToBoxAdapter(
+                child: FeautredBookListView(
+                  height: MediaQuery.of(context).size.height * .3,
+                ),
+              ),
+              const SliverToBoxAdapter(
+                child: SizedBox(height: 40),
+              ),
+              SliverToBoxAdapter(
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 30.0),
+                  child: Text(
+                    'Best Seller',
+                    style: Styles.textStyle18.copyWith(color: Colors.white),
+                  ),
+                ),
+              ),
+              const SliverToBoxAdapter(
+                child: SizedBox(height: 20),
+              ),
+              const BestSellerListView(),
+            ],
+          ),
         ),
-      ),
-    );
-  }
+      );
 }

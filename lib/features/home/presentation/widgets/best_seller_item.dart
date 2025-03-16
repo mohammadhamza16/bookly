@@ -8,24 +8,22 @@ class BestSellerItem extends StatelessWidget {
   const BestSellerItem({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        Navigator.pushNamed(context, AppRoutes.bookdetailsRoute);
-      },
-      child: Container(
-        width: MediaQuery.of(context).size.width,
-        height: 150,
-        child: const Row(
-          children: [
-            BestSellerImage(),
-            SizedBox(
-              width: 12,
-            ),
-            BestSellerDetails(),
-          ],
+  Widget build(BuildContext context) => GestureDetector(
+        onTap: () {
+          Navigator.pushNamed(context, AppRoutes.bookdetailsRoute);
+        },
+        child: Container(
+          width: MediaQuery.of(context).size.width,
+          height: 150,
+          child: const Row(
+            children: [
+              BestSellerImage(),
+              SizedBox(
+                width: 12,
+              ),
+              BestSellerDetails(),
+            ],
+          ),
         ),
-      ),
-    );
-  }
+      );
 }

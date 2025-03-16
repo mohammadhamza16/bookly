@@ -18,25 +18,21 @@ class _SplashBodyState extends State<SplashBody> {
   }
 
   @override
-  Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Image.asset(kLogo),
-        const Text(
-          'explore our books',
-          textAlign: TextAlign.center,
-        )
-      ],
-    );
-  }
+  Widget build(BuildContext context) => Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Image.asset(kLogo),
+          const Text(
+            'explore our books',
+            textAlign: TextAlign.center,
+          )
+        ],
+      );
 
-  Future<dynamic> navigatorToHomeView() {
-    return Future.delayed(
-        const Duration(
-          seconds: 2,
-        ),
-        () => Navigator.pushReplacementNamed(context, AppRoutes.homeRoute));
-  }
+  Future<dynamic> navigatorToHomeView() => Future.delayed(
+      const Duration(
+        seconds: 2,
+      ),
+      () => Navigator.pushReplacementNamed(context, AppRoutes.homeRoute));
 }

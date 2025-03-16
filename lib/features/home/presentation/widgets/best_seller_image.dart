@@ -7,15 +7,13 @@ class BestSellerImage extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
-    return AspectRatio(
-      aspectRatio: 3 / 5,
-      child: Container(
-        decoration: const BoxDecoration(
-            image: DecorationImage(
-          image: AssetImage(kTestImage),
-        )),
-      ),
-    );
-  }
+  Widget build(BuildContext context) => AspectRatio(
+        aspectRatio: 3 / 5,
+        child: Container(
+          decoration: const BoxDecoration(
+              image: DecorationImage(
+            image: AssetImage(kTestImage),
+          )),
+        ),
+      );
 }

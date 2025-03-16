@@ -8,14 +8,12 @@ class BookDetailsViewBody extends StatelessWidget {
   const BookDetailsViewBody({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        CustomBookDetailsAppBar(),
-        SizedBox(height: 20),
-        BookInfoSection(),
-        YouCanAlsoLikeSection(),
-      ],
-    );
-  }
+  Widget build(BuildContext context) => const Column(
+        children: [
+          CustomBookDetailsAppBar(),
+          SizedBox(height: 20),
+          BookInfoSection(),
+          YouCanAlsoLikeSection(),
+        ],
+      );
 }

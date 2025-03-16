@@ -12,16 +12,14 @@ class FeautredBookListView extends StatelessWidget {
   final double height;
   final EdgeInsetsGeometry? padding;
   @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-        height: height,
-        child: ListView.builder(
-          padding: padding ?? const EdgeInsets.symmetric(horizontal: 14),
-          itemCount: 10,
-          scrollDirection: Axis.horizontal,
-          itemBuilder: (context, index) => Container(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 8),
-              child: const ItemImage()),
-        ));
-  }
+  Widget build(BuildContext context) => SizedBox(
+      height: height,
+      child: ListView.builder(
+        padding: padding ?? const EdgeInsets.symmetric(horizontal: 14),
+        itemCount: 10,
+        scrollDirection: Axis.horizontal,
+        itemBuilder: (context, index) => Container(
+            margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 8),
+            child: const ItemImage()),
+      ));
 }

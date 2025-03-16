@@ -12,13 +12,12 @@ class Bookly extends StatelessWidget {
   const Bookly({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      initialRoute: AppRoutes.splashRoute,
-      onGenerateRoute: onGenerate,
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: kPrimaryColor),
-      home: const SplashView(),
-    );
-  }
+  Widget build(BuildContext context) => MaterialApp(
+        initialRoute: AppRoutes.splashRoute,
+        onGenerateRoute: onGenerate,
+        debugShowCheckedModeBanner: false,
+        theme:
+            ThemeData.dark().copyWith(scaffoldBackgroundColor: kPrimaryColor),
+        home: const SplashView(),
+      );
 }
